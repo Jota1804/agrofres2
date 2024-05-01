@@ -437,7 +437,7 @@ section.ourProducts .bottom div:first-child {
   align-items: center;
   justify-content: center;
   background-color: #aec90a;
-  padding: 10px 30px;
+  padding: 10px;
   border-radius: 30px;
   width: 160px;
   text-align: center;
@@ -445,6 +445,7 @@ section.ourProducts .bottom div:first-child {
 
 section.ourProducts .bottom div:first-child p{
   font-size: 1rem;
+  text-transform: uppercase;
 
 }
 
@@ -453,11 +454,14 @@ section.ourProducts .bottom div:last-child {
   align-items: center;
   justify-content: space-between;
   border: #000000 solid 1px;
-  padding: 10px 30px;
+  padding: 10px 15px 10px 20px;
   border-radius: 30px;
   width: 160px;
 }
 
+section.ourProducts .bottom div:last-child p{
+  text-transform: uppercase;
+}
 
 
 
