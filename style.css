@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: Helvetica, sans-serif , Arial;
 }
 
 body{
@@ -464,6 +464,70 @@ section.ourProducts .bottom div:last-child p{
 }
 
 
+
+
+/*SECTION 5 QUALITY*/
+
+  section.quality{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box; 
+    background-color: #f3f3f4;
+    gap: 15px;
+
+  }
+
+  section.quality .top{
+    width: 60%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #303030;
+  }
+
+  section.quality .top .img {
+    width: 50%;
+    height: 100%;
+    background-image: url(./public/img/agricultor.png);
+    background-size: 520px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section.quality .top .text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 20px;
+}
+
+  section.quality .top .text h1 {
+    font-size: 3rem;
+    width: 250px;
+    line-height: 37px;
+  }
+
+  section.quality .top .text p {
+    width: 275px;
+    font-size: 0.8rem;
+}
+
+  section.quality .bottom{
+    width: 60%;
+    height: 35%;
+    background-color: blue;
+
+  }
 
 
 
