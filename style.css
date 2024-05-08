@@ -23,7 +23,7 @@ body{
 }
 
 .header{
-  width: 100vw;
+  width: 100%;
   position: absolute;
   z-index: 10;
 }
@@ -86,13 +86,14 @@ body{
 .home{
   min-height: 100vh;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background: url('./public/bg/background-img.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   opacity: .95;
+  overflow-x: hidden;
 }
 
 .leftDiv{
@@ -207,14 +208,14 @@ section.ourPeople{
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 section.ourPeople .top{
   display: flex;
   flex-direction: row;
   height: 60vh;
-  width: 100vw;
+  width: 100%;
   background-color: #aec90a;
 }
 
@@ -276,6 +277,7 @@ section.ourPeople .top .right{
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 section.ourPeople .top .right div{
@@ -298,28 +300,32 @@ section.ourPeople .top .right div p{
 
 section.ourPeople .bottom{
   height: 40vh;
-  width: 100vw;
+  width: 100%;
   background-image: url(./public/img/green.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  overflow-x: hidden;
 }
+
+
 
 
 /*SECTION OUR PRODUCTS*/
 
 section.ourProducts{
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   background-color: #f3f3f4;
+  overflow-x: hidden;
 }
 
 section.ourProducts .top{
-  width: 100vw;
+  width: 100%;
   height: 20vh;
   display: flex;
   align-items: center;
@@ -371,28 +377,28 @@ section.ourProducts .center {
 }
 
 .swiper-slide div.carrucel-img1 {
-  background-image: url(./public/img/carrucel\ 1.jpeg);
+  background-image: url(./public/img/carrucel1.jpeg);
   background-repeat: no-repeat;
   background-position: center;
     background-size: 415px 450px;
 }
 
 .swiper-slide div.carrucel-img2 {
-  background-image: url(./public/img/carrucel\ 2.jpeg);
+  background-image: url(./public/img/carrucel2.jpeg);
   background-repeat: no-repeat;
   background-position: center;
     background-size: 415px 450px;
 }
 
 .swiper-slide div.carrucel-img3 {
-  background-image: url(./public/img/carrucel\ 3.jpeg);
+  background-image: url(./public/img/carrucel3.jpeg);
   background-repeat: no-repeat;
   background-position: center;
     background-size: 415px 450px;
 }
 
 .swiper-slide div.carrucel-img4{
-  background-image: url(./public/img/carrucel\ 4.jpeg);
+  background-image: url(./public/img/carrucel4.jpeg);
   background-repeat: no-repeat;
   background-position: center;
     background-size: 415px 450px;
@@ -424,7 +430,7 @@ section.ourProducts .center {
 
 
 section.ourProducts .bottom{
-  width: 100vw;
+  width: 100%;
   height: 20vh;
   display: flex;
   align-items: center;
@@ -470,7 +476,7 @@ section.ourProducts .bottom div:last-child p{
 
   section.quality{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
@@ -478,11 +484,12 @@ section.ourProducts .bottom div:last-child p{
     flex-direction: column;
     box-sizing: border-box; 
     background-color: #f3f3f4;
-    gap: 15px;
+    gap: 50px;
+    overflow: hidden;
 
   }
 
-  section.quality .top{
+  section.quality .top {
     width: 60%;
     height: 35%;
     display: flex;
@@ -490,47 +497,286 @@ section.ourProducts .bottom div:last-child p{
     justify-content: space-between;
     flex-direction: row;
     color: #303030;
-  }
+    padding-left: 50px;
+    z-index: 2;
+}
 
   section.quality .top .img {
     width: 50%;
     height: 100%;
     background-image: url(./public/img/agricultor.png);
-    background-size: 520px;
+    background-size: 665px;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-section.quality .top .text {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 15px;
-  padding-left: 20px;
-}
-
-  section.quality .top .text h1 {
-    font-size: 3rem;
-    width: 250px;
-    line-height: 37px;
   }
 
-  section.quality .top .text p {
-    width: 275px;
-    font-size: 0.8rem;
+  section.quality .top .text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0px;
+  }
+
+  section.quality .top .text h2 {
+    font-size: 2rem;
+  }
+
+  section.quality .top .text h1 {
+    font-size: 4.5rem;
+    width: 250px;
+    line-height: 54px;
+    padding-bottom: 15px;
 }
+
+  section.quality .top .text p {
+    width: 335px;
+    font-size: 1rem;
+    line-height: 25px;
+  }
 
   section.quality .bottom{
     width: 60%;
-    height: 35%;
-    background-color: blue;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #303030;
+    gap: 50px;
+    z-index: 2;
+  }
+
+  section.quality .bottom .text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0px;
+    text-align: end;
+}
+
+  section.quality .bottom .text h2{
+    font-size: 2rem;
 
   }
 
+  
+  section.quality .bottom .text h1{
+    font-size: 4.5rem;
+    width: 100%;
+    line-height: 54px;
+    padding-bottom: 15px;
+  }
+
+  section.quality .bottom .text p {
+    width: 355px;
+    font-size: 1rem;
+    line-height: 25px;
+}
 
 
+  section.quality .bottom .card {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  section.quality .bottom .card .img__card {
+    width: 100%;
+    height: 40%;
+    background-image: url(./public/img/fondo-plantas.jpeg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+  }
+
+  section.quality .bottom .card .text__card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    color: #6c6c6c;
+}
+
+section.quality .bottom .card .text__card div {
+  width: 240px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+section.quality .right {
+  position: absolute;
+  bottom: 0%;
+  right: -10%;
+  width: 40%;
+  height: 80%;
+  background-image: url(./public/img/planta-romero.png);
+  background-repeat: no-repeat;
+  background-size: 750px 750px;
+  z-index: 1;
+}
+
+
+
+
+/*SECTION 7 contact us*/
+
+  section.contact-us{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  section.contact-us .top{
+    width: 100%;
+    height: 40vh;
+  }
+
+  section.contact-us .bottom{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;align-items: center;
+    justify-content: center;
+    background-color: #f3f3f4;
+    gap: 125px;
+  }
+
+  section.contact-us .bottom .left{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.contact-us .bottom .left h2{
+    font-size: 2rem;
+
+  }
+
+  section.contact-us .bottom .left h1 {
+    font-size: 4.7rem;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  section.contact-us .bottom .left h1::after {
+    content: '';
+    width: 95px;
+    height: 2px;
+    background-color: #007e48;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+  #contact-us > div.bottom > div.left > div:nth-child(3) {
+    background-image: url(./public/img/mapa.jpeg);
+    width: 460px;
+    height: 180px;
+    position: relative;
+    margin: 20px 0;
+  }
+
+  #contact-us > div.bottom > div.left > div:nth-child(4) {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: solid 2px #007e48;
+    padding-left: 20px;
+}
+
+  #contact-us > div.bottom > div.left > div:nth-child(5) {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: solid 2px #007e48;
+    padding-left: 20px;
+  }
+
+  #contact-us > div.bottom > div.left > div:nth-child(3) p {
+    position: absolute;
+    right: -10px;
+    bottom: 40%;
+    font-size: 2rem;
+  }
+
+  section.contact-us .bottom .right{
+      gap: 25px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  section.contact-us .bottom .right div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  section.contact-us .bottom .right div span{
+    color: #aec90a;
+
+  }
+
+  section.contact-us .bottom .right div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+
+  section.contact-us .bottom .right form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section.contact-us .bottom .right form input {
+    background-color: transparent;
+    padding: 8px 10px;
+    border-radius: 5px;
+    width: 335px;
+    border: solid 1px #818181;
+  }
+
+  section.contact-us .bottom .right form textarea {
+    background-color: transparent;
+    padding: 8px 10px;
+    border-radius: 5px;
+    width: 335px;
+    border: solid 1px #818181;
+    margin-bottom: 20px;
+  }
+
+  section.contact-us .bottom .right form input[type="submit"] {
+    background-color: #aec90a;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    /* text-align: center; */
+    padding: 0px 48px;
+  }
 
 
 
@@ -567,7 +813,171 @@ section.quality .top .text {
     /* margin: auto; */
     width: 730px;
     object-fit: cover;
-    }
+  }
+
+
+
+  /*SECTION 5 QUALITY*/
+
+  section.quality{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box; 
+    background-color: #f3f3f4;
+    gap: 50px;
+    overflow: hidden;
+
+  }
+
+  section.quality .top {
+    width: 60%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #303030;
+    padding-left: 50px;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 0;
+    gap: 15px;
+  }
+
+  section.quality .top .img {
+    width: 50%;
+    height: 100%;
+    background-image: url(./public/img/agricultor.png);
+    background-size: 630px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  section.quality .top .text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0px;
+  }
+
+  section.quality .top .text h2 {
+    font-size: 2rem;
+  }
+
+  section.quality .top .text h1 {
+    font-size: 4.5rem;
+    width: 250px;
+    line-height: 54px;
+    padding-bottom: 15px;
+  }
+
+  section.quality .top .text p {
+    width: 335px;
+    font-size: 1rem;
+    line-height: 25px;
+  }
+
+  section.quality .bottom {
+    width: 60%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #303030;
+    gap: 25px;
+    z-index: 2;
+    margin: 0 auto;
+  }
+
+  section.quality .bottom .text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0px;
+    text-align: end;
+  }
+
+  section.quality .bottom .text h2{
+    font-size: 2rem;
+
+  }
+
+  
+  section.quality .bottom .text h1 {
+    font-size: 3.5rem;
+    width: 100%;
+    line-height: 42px;
+    padding-bottom: 15px;
+  }
+
+  section.quality .bottom .text p {
+    width: 355px;
+    font-size: 1rem;
+    line-height: 25px;
+  }
+
+
+  section.quality .bottom .card {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  section.quality .bottom .card .img__card {
+    width: 100%;
+    height: 40%;
+    background-image: url(./public/img/fondo-plantas.jpeg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+  }
+
+  section.quality .bottom .card .text__card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    color: #6c6c6c;
+  }
+
+  section.quality .bottom .card .text__card div {
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+
+  section.quality .right {
+    position: absolute;
+    bottom: 0%;
+    right: -10%;
+    width: 40%;
+    height: 80%;
+    background-image: url(./public/img/planta-romero.png);
+    background-repeat: no-repeat;
+    background-size: 750px 750px;
+    z-index: 1;
+  }
 
 
 }
@@ -603,6 +1013,126 @@ section.quality .top .text {
     width: 550px;
     object-fit: cover;
 }
+
+
+    /*SECTION 5 QUALITY*/
+
+    section.quality .top .img {
+      width: 50%;
+      height: 100%;
+      background-image: url(./public/img/agricultor.png);
+      background-size: 480px;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* margin-right: 10px; */
+    }
+
+
+    section.quality .top .text h2 {
+      font-size: 1.5rem;
+    }
+
+    section.quality .top .text h1 {
+      font-size: 3.5rem;
+      width: 250px;
+      line-height: 45px;
+      padding-bottom: 15px;
+  }
+
+    section.quality .top .text p {
+      width: 300px;
+      font-size: 0.8rem;
+      line-height: 20px;
+  }
+
+  section.quality .top .text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 5px;
+  }
+
+  section.quality .top {
+    width: 60%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #303030;
+    /* padding-left: 50px; */
+    z-index: 2;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+
+  section.quality .bottom .text h2 {
+    font-size: 1.5rem;
+  }
+
+  section.quality .bottom .text h1 {
+    font-size: 2.7rem;
+    width: 100%;
+    line-height: 33px;
+    padding-bottom: 15px;
+  }
+
+  section.quality .bottom .text p {
+    width: 260px;
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+
+  section.quality .bottom .text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0px;
+    text-align: end;
+  }
+
+  section.quality .bottom {
+    width: 70%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #303030;
+    gap: 10px;
+    z-index: 2;
+  }
+
+  section.quality .bottom .card .text__card div {
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 0.8rem;
+    padding-left: 25px;
+    align-items: center;
+    justify-content: left;
+  }
+
+  section.quality .right {
+    position: absolute;
+    bottom: -22%;
+    right: -9%;
+    width: 40%;
+    height: 80%;
+    background-image: url(./public/img/planta-romero.png);
+    background-repeat: no-repeat;
+    background-size: 550px 550px;
+    z-index: 1;
+  }
 
 
 }
@@ -702,17 +1232,141 @@ section.quality .top .text {
     /* margin: auto; */
     width: 450px;
     object-fit: cover;
-    }
+  }
 
-    section.ourPeople .top .right div {
+  section.ourPeople .top .right div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    font-size: 0.9rem;
+  }
+
+    /*SECTION 5 QUALITY*/
+
+    section.quality {
+      height: 100vh;
+      width: 100%;
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      gap: 10px;
-      width: 60%;
-      font-size: 0.9rem;
+      box-sizing: border-box;
+      background-color: #f3f3f4;
+      gap: 0px;
+      overflow-x: hidden;
+    }
+
+    section.quality .top {
+      width: 70%;
+      height: 35%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      color: #303030;
+      padding-left: 50px;
+      z-index: 2;
   }
+
+    section.quality .top .img {
+      width: 50%;
+      height: 100%;
+      background-image: url(./public/img/agricultor.png);
+      background-size: 410px;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: 10px;
+    }
+
+    section.quality .top .text h1 {
+      font-size: 3rem;
+      width: 210px;
+      line-height: 36px;
+      padding-bottom: 10px;
+    }
+
+    section.quality .top .text p {
+      width: 235px;
+      font-size: 0.7rem;
+      line-height: 20px;
+    }
+
+    section.quality .top .text {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+      padding-left: 5px;
+    }
+
+
+    section.quality .bottom .text h1 {
+      font-size: 2.7rem;
+      width: 100%;
+      line-height: 34px;
+      padding-bottom: 10px;
+    }
+
+    section.quality .bottom .text p {
+      width: 227px;
+      font-size: 0.7rem;
+      line-height: 20px;
+    }
+
+    section.quality .bottom {
+      width: 70%;
+      height: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      color: #303030;
+      gap: 15px;
+      z-index: 2;
+      margin-right: 0px;
+      margin: 0 auto;
+    }
+
+    section.quality .bottom .card .text__card div {
+      width: 88%;
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      font-size: 0.7rem;
+      /* padding-left: 35px; */
+      align-items: center;
+      justify-content: left;
+      /* padding-left: 5px; */
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    section.quality .bottom .card {
+      width: 280px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    section.quality .right {
+      position: absolute;
+      bottom: -38%;
+      right: -8%;
+      width: 40%;
+      height: 80%;
+      background-image: url(./public/img/planta-romero.png);
+      background-repeat: no-repeat;
+      background-size: 400px 400px;
+      z-index: 1;
+    }
+
 
 
 }
@@ -803,6 +1457,122 @@ section.quality .top .text {
     object-fit: cover;
     }
 
+    /*SECTION 5 QUALITY*/
+
+    section.quality .top {
+      width: 85%;
+      height: 35%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      color: #303030;
+      padding-left: 42px;
+      z-index: 2;
+      margin: 0 auto;
+      padding: 0;
+      gap: 0;
+    }
+
+    section.quality .bottom {
+      width: 85%;
+      height: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      color: #303030;
+      gap: 5px;
+      z-index: 2;
+      margin-right: 0px;
+      margin: 0 auto;
+    }
+
+    section.quality .bottom .card {
+      /* width: 45%; */
+      width: 205px;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+
+    section.quality .bottom .card .text__card {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5%;
+      color: #6c6c6c;
+    }
+
+    section.quality .bottom .card .text__card div {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      /* gap: 5px; */
+      font-size: 0.6rem;
+      /* padding-left: 35px; */
+      align-items: center;
+      justify-content: left;
+      /* padding-left: 30px; */
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    section.quality .top .text h1 {
+      font-size: 2.5rem;
+      width: 210px;
+      line-height: 31px;
+      padding-bottom: 10px;
+    }
+
+    section.quality .top .text p {
+      width: 170px;
+      font-size: 0.65rem;
+      line-height: 20px;
+    }
+
+    section.quality .bottom .text h1 {
+      font-size: 1.8rem;
+      width: 250px;
+      line-height: 22px;
+      padding-bottom: 10px;
+  }
+
+    section.quality .top .img {
+      width: 50%;
+      height: 100%;
+      background-image: url(./public/img/agricultor.png);
+      background-size: 380px;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* margin-right: 10px; */
+      margin: 0;
+    }
+
+    section.quality .bottom .text {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      flex-direction: column;
+      gap: 10px;
+      padding-left: 0px;
+      text-align: end;
+    }
+
+    section.quality .bottom .text p {
+      width: 203px;
+      font-size: 0.65rem;
+      line-height: 20px;
+    }
+
+
 }
 
 
@@ -873,6 +1643,125 @@ section.quality .top .text {
 
 
 
+    /*SECTION 5 QUALITY*/
+
+
+    section.quality .top {
+      width: 85%;
+      height: 35%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      color: #303030;
+      padding-left: 0px;
+      z-index: 2;
+  }
+
+  section.quality .top .img {
+    width: 50%;
+    height: 100%;
+    background-image: url(./public/img/agricultor.png);
+    background-size: 330px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+  }
+
+  section.quality .top .text h2 {
+    font-size: 1.3rem;
+  }
+
+  section.quality .top .text h1 {
+    font-size: 2.3rem;
+    width: 150px;
+    line-height: 29px;
+    padding-bottom: 5px;
+  }
+  
+  section.quality .top .text p {
+    width: 155px;
+    font-size: 0.6rem;
+    line-height: 15px;
+  }
+
+
+  section.quality .bottom {
+    width: 85%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #303030;
+    gap: 10px;
+    z-index: 2;
+    margin-right: 0px;
+  }
+
+  section.quality .bottom .text h2 {
+    font-size: 1.3rem;
+  }
+
+  section.quality .bottom .text h1 {
+    font-size: 1.5rem;
+    width: 100%;
+    line-height: 22px;
+    padding-bottom: 5px;
+  }
+
+  section.quality .bottom .text p {
+    width: 135px;
+    font-size: 0.6rem;
+    line-height: 15px;
+  }
+
+
+  section.quality .bottom .card {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  section.quality .bottom .card .text__card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #6c6c6c;
+  }
+
+  section.quality .bottom {
+    width: 85%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #303030;
+    gap: 10px;
+    z-index: 2;
+    margin-right: 0px;
+    margin: 0 auto;
+  } 
+
+  section.quality .right {
+    position: absolute;
+    bottom: -40%;
+    right: 0%;
+    width: 40%;
+    height: 80%;
+    background-image: url(./public/img/planta-romero.png);
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    z-index: 1;
+  }
 
 }
 
@@ -951,4 +1840,84 @@ section.quality .top .text {
     width: 220px;
     object-fit: cover;
     }
+
+    /*SECTION 5 QUALITY*/
+
+    section.quality .top .img {
+      width: 50%;
+      height: 100%;
+      background-image: url(./public/img/agricultor.png);
+      background-size: 290px;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: 0px;
+    }
+
+
+    section.quality .top .text h1 {
+      font-size: 2rem;
+      width: 150px;
+      line-height: 24px;
+      padding-bottom: 5px;
+    }
+
+    section.quality .top .text p {
+      width: 140px;
+      font-size: 0.55rem;
+      line-height: 15px;
+    }
+
+    section.quality .bottom .text h1 {
+      font-size: 1.7rem;
+      width: 100%;
+      line-height: 21px;
+      padding-bottom: 5px;
+    }
+
+    section.quality .bottom .text p {
+      width: 157px;
+      font-size: 0.55rem;
+      line-height: 15px;
+    }
+
+    section.quality .bottom .card {
+      width: 50%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    section.quality .bottom .card .text__card {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6%;
+      color: #6c6c6c;
+    }
+
+    section.quality .bottom .text h1 {
+      font-size: 1.5rem;
+      width: 100%;
+      line-height: 21px;
+      padding-bottom: 5px;
+    }
+
+    section.quality .right {
+      position: absolute;
+      bottom: -45%;
+      right: -11%;
+      width: 65%;
+      height: 80%;
+      background-image: url(./public/img/planta-romero.png);
+      background-repeat: no-repeat;
+      background-size: 350px 350px;
+      z-index: 1;
+    }
+
+
 }
