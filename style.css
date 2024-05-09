@@ -646,6 +646,18 @@ section.quality .right {
   section.contact-us .top{
     width: 100%;
     height: 40vh;
+    position: relative;
+  }
+
+  section.contact-us .top video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    object-fit: cover;
+    object-position: center;
   }
 
   section.contact-us .bottom{
@@ -711,17 +723,23 @@ section.quality .right {
     padding-left: 20px;
   }
 
-  #contact-us > div.bottom > div.left > div:nth-child(3) p {
+  #contact-us > div.bottom > div.left > div:nth-child(3) span {
     position: absolute;
-    right: -10px;
+    right: -20px;
     bottom: 40%;
     font-size: 2rem;
-  }
+    border-radius: 50%;
+    width: 35px;
+    border: 1px black solid;
+    height: 35px;
+    text-align: center;
+}
 
-  section.contact-us .bottom .right{
-      gap: 25px;
-      display: flex;
-      flex-direction: column;
+  section.contact-us .bottom .right {
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
   }
 
   section.contact-us .bottom .right div{
@@ -730,16 +748,16 @@ section.quality .right {
     gap: 8px;
   }
 
-  section.contact-us .bottom .right div span{
+  section.contact-us .bottom .right div i {
     color: #aec90a;
-
-  }
+    font-size: 1.25rem;
+}
 
   section.contact-us .bottom .right div div{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
   }
 
   section.contact-us .bottom .right form{
@@ -762,7 +780,7 @@ section.quality .right {
     border-radius: 5px;
     width: 335px;
     border: solid 1px #818181;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   section.contact-us .bottom .right form input[type="submit"] {
@@ -965,6 +983,7 @@ section.quality .right {
     gap: 20px;
     font-size: 1rem;
     padding-left: 10px;
+    align-items: center;
   }
 
   section.quality .right {
@@ -1132,6 +1151,96 @@ section.quality .right {
     background-repeat: no-repeat;
     background-size: 550px 550px;
     z-index: 1;
+  }
+
+  /*SECTION 7 contact us*/
+
+  section.contact-us .bottom {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f4;
+    gap: 50px;
+  }
+
+  section.contact-us .bottom .left h1 {
+    font-size: 3.5rem;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  #contact-us > div.bottom > div.left > div:nth-child(4) {
+    width: 289px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: solid 2px #007e48;
+    padding-left: 20px;
+    font-size: 0.9rem;
+  }
+
+  #contact-us > div.bottom > div.left > div:nth-child(5) {
+    width: 289px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: solid 2px #007e48;
+    padding-left: 20px;
+    font-size: 0.9rem;
+  }
+
+  #contact-us > div.bottom > div.left > div:nth-child(3) {
+    background-image: url(./public/img/mapa.jpeg);
+    width: 350px;
+    height: 170px;
+    position: relative;
+    margin: 20px 0;
+  }
+
+  section.contact-us .bottom .left {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.contact-us .bottom .right div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.85rem;
+  }
+
+  section.contact-us .bottom .right form input {
+    background-color: transparent;
+    padding: 8px 8px;
+    border-radius: 5px;
+    width: 300px;
+    border: solid 1px #818181;
+  }
+
+  section.contact-us .bottom .right form textarea {
+    background-color: transparent;
+    padding: 8px 8px;
+    border-radius: 5px;
+    width: 300px;
+    border: solid 1px #818181;
+    margin-bottom: 10px;
+  }
+
+  section.contact-us .bottom .right form input[type="submit"] {
+    background-color: #aec90a;
+    width: 135px;
+    height: 45px;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0px 43px;
   }
 
 
@@ -1367,6 +1476,72 @@ section.quality .right {
       z-index: 1;
     }
 
+    /*SECTION 7 contact us*/
+
+    section.contact-us .bottom .right form input {
+      background-color: transparent;
+      padding: 8px 8px;
+      border-radius: 5px;
+      width: 265px;
+      border: solid 1px #818181;
+    }
+
+    section.contact-us .bottom .right form textarea {
+      background-color: transparent;
+      padding: 8px 8px;
+      border-radius: 5px;
+      width: 265px;
+      border: solid 1px #818181;
+      margin-bottom: 10px;
+    }
+
+    section.contact-us .bottom {
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: #f3f3f4;
+      gap: 30px;
+    }
+
+    #contact-us > div.bottom > div.left > div:nth-child(3) {
+      background-image: url(./public/img/mapa.jpeg);
+      width: 315px;
+      height: 170px;
+      position: relative;
+      margin: 20px 0;
+    }
+
+    section.contact-us .bottom .left h1 {
+      font-size: 3rem;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    #contact-us > div.bottom > div.left > div:nth-child(4) {
+      width: 289px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-left: solid 2px #007e48;
+      padding-left: 20px;
+      font-size: 0.85rem;
+    }
+
+    #contact-us > div.bottom > div.left > div:nth-child(3) span {
+      position: absolute;
+      right: -15px;
+      bottom: 40%;
+      font-size: 1.7rem;
+      border-radius: 50%;
+      width: 30px;
+      border: 1px black solid;
+      height: 30px;
+      text-align: center;
+    }
+
 
 
 }
@@ -1572,6 +1747,112 @@ section.quality .right {
       line-height: 20px;
     }
 
+    /*SECTION 7 contact us*/
+
+    section.contact-us .bottom {
+      width: 100%;
+      height: 125vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #f3f3f4;
+      gap: 50px;
+    }
+
+    section.contact-us .bottom .right {
+      gap: 25px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 0px;
+    }
+
+    section.contact-us .bottom .left h1 {
+      font-size: 3.2rem;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    #contact-us > div.bottom > div.left > div:nth-child(3) {
+      background-image: url(./public/img/mapa.jpeg);
+      width: 375px;
+      height: 190px;
+      position: relative;
+      margin: 15px 0;
+    } 
+
+
+    #contact-us > div.bottom > div.left > div:nth-child(4) {
+      width: 289px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-left: solid 2px #007e48;
+      padding-left: 20px;
+      font-size: 1rem;
+    }
+
+    #contact-us > div.bottom > div.left > div:nth-child(5) {
+      width: 289px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-left: solid 2px #007e48;
+      padding-left: 20px;
+      font-size: 1rem;
+    }
+
+    section.contact-us .bottom .right div {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 1rem;
+    }
+
+    section.contact-us .bottom .right form input {
+      background-color: transparent;
+      padding: 10px 10px;
+      border-radius: 5px;
+      width: 375px;
+      border: solid 1px #818181;
+    }
+
+    section.contact-us .bottom .right form textarea {
+      background-color: transparent;
+      padding: 10px 10px;
+      border-radius: 5px;
+      width: 375px;
+      border: solid 1px #818181;
+      margin-bottom: 10px;
+    }
+
+    section.contact-us .bottom .right form input[type="submit"] {
+      background-color: #aec90a;
+      width: 150px;
+      height: 50px;
+      display: flex;
+      align-self: center;
+      text-align: center;
+      border-radius: 50px;
+      font-size: 1rem;
+      text-align: center;
+      padding: 0px 44px;
+    }
+
+    #contact-us > div.bottom > div.left > div:nth-child(3) span {
+      position: absolute;
+      right: -20px;
+      bottom: 40%;
+      font-size: 2rem;
+      border-radius: 50%;
+      width: 35px;
+      border: 1px black solid;
+      height: 35px;
+      text-align: center;
+    }
+
+
+
 
 }
 
@@ -1763,6 +2044,46 @@ section.quality .right {
     z-index: 1;
   }
 
+  /*SECTION 7 contact us*/
+
+  #contact-us > div.bottom > div.left > div:nth-child(3) {
+    background-image: url(./public/img/mapa.jpeg);
+    width: 325px;
+    height: 190px;
+    position: relative;
+    margin: 15px 0;
+  }
+
+  section.contact-us .bottom .right form input {
+    background-color: transparent;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 325px;
+    border: solid 1px #818181;
+  }
+
+  section.contact-us .bottom .right form textarea {
+    background-color: transparent;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 325px;
+    border: solid 1px #818181;
+    margin-bottom: 10px;
+  }
+
+  section.contact-us .bottom .right form input[type="submit"] {
+    background-color: #aec90a;
+    width: 135px;
+    height: 50px;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0px 36px;
+  }
+
 }
 
 
@@ -1917,6 +2238,52 @@ section.quality .right {
       background-repeat: no-repeat;
       background-size: 350px 350px;
       z-index: 1;
+    }
+
+    /*SECTION 7 contact us*/
+
+    section.contact-us .bottom .left h1 {
+      font-size: 2.5rem;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    #contact-us > div.bottom > div.left > div:nth-child(3) {
+      background-image: url(./public/img/mapa.jpeg);
+      width: 290px;
+      height: 190px;
+      position: relative;
+      margin: 15px 0;
+    }
+
+    section.contact-us .bottom .right form input {
+      background-color: transparent;
+      padding: 10px 10px;
+      border-radius: 5px;
+      width: 290px;
+      border: solid 1px #818181;
+    }
+
+    section.contact-us .bottom .right form textarea {
+      background-color: transparent;
+      padding: 10px 10px;
+      border-radius: 5px;
+      width: 290px;
+      border: solid 1px #818181;
+      margin-bottom: 10px;
+    }
+
+    section.contact-us .bottom .right form input[type="submit"] {
+      background-color: #aec90a;
+      width: 120px;
+      height: 50px;
+      display: flex;
+      align-self: center;
+      text-align: center;
+      border-radius: 50px;
+      font-size: 1rem;
+      text-align: center;
+      padding: 0px 29px;
     }
 
 
